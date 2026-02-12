@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>안녕하세요 범쌤입니다.</title>
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/home.js"></script>
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
+    <link rel="stylesheet" href="/styles/about.css" />
+    <link rel="stylesheet" href="/styles/portfolio.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
+  </head>
+
+  <body>
+    <!-- Barba Wrapper -->
+    <svg
+      class="ham hamRotate ham7"
+      viewBox="0 0 100 100"
+      width="80"
+      aria-label="open menu"
+    >
+      <path
+        class="line top"
+        d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013"
+      />
+      <path class="line middle" d="m 70,50 h -40" />
+      <path
+        class="line bottom"
+        d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40"
+      />
+    </svg>
+
+    <nav id="global-navigation" class="nav-overlay" aria-hidden="true">
+      <ul class="nav-list">
+        <li class="active">
+          <a
+            href="/ko/index.html"
+            aria-current="page"
+            data-i18n="common.nav.home"
+          ></a>
+        </li>
+        <li><a href="/ko/about.html" data-i18n="common.nav.about"></a></li>
+        <li>
+          <a href="/ko/portfolio.html" data-i18n="common.nav.portfolio"></a>
+        </li>
+        <li><a href="/ko/contact.html" data-i18n="common.nav.contact"></a></li>
+      </ul>
+
+      <div
+        class="nav-tagline font-gang-bold"
+        data-i18n-html="common.contents.slogan"
+      ></div>
+
+      <footer class="nav-footer">
+        <div class="top">
+          <div class="lang-switch">
+            <button aria-current="true">KO</button>
+            <button>EN</button>
+          </div>
+
+          <ul class="social-links">
+            <li>
+              <a href="https://youtube.com" aria-label="YouTube"
+                ><img src="/icons/youtube.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://instagram.com" aria-label="Instagram"
+                ><img src="/icons/instagram.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://facebook.com" aria-label="Facebook"
+                ><img src="/icons/facebook.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <hr />
+        <ul class="bottom">
+          <li>
+            <span>WEBSITE BY</span>
+            <span>8B-Studio</span>
+          </li>
+          <li>© 2026 SeonBeomSim</li>
+        </ul>
+      </footer>
+    </nav>
+    <div id="smooth-wrapper" data-barba="wrapper">
+      <div id="smooth-content">
+        <!-- Page Container -->
+        <main
+          class="container"
+          data-barba="container"
+          data-barba-namespace="portfolio"
+        >
+          <h1 data-i18n-html="portfolio.title" class="font-gang-bold"></h1>
+
+          <section>
+            <!-- 인프런 -->
+            <h2 class="highlight">
+              <a
+                href="https://www.inflearn.com/"
+                data-i18n="portfolio.section1.title"
+              ></a>
+            </h2>
+            <figure>
+              <a
+                href="https://www.inflearn.com/course/%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8B%9C%EC%8A%A4%ED%85%9C-with-%ED%94%BC%EA%B7%B8%EB%A7%88?cid=329506"
+                target="_blank"
+              >
+                <div class="cover">
+                  <img
+                    src="/designSystem.png"
+                    data-i18n-attr="alt:portfolio.section1.lecture1Alt"
+                  />
+                </div>
+                <figcaption
+                  class="font-gang-bold"
+                  data-i18n="portfolio.section1.lecture1"
+                ></figcaption>
+              </a>
+            </figure>
+            <figure>
+              <a
+                href="https://www.inflearn.com/course/%EC%9B%B9-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98-gsap-3?cid=331914"
+                target="_blank"
+              >
+                <div class="cover">
+                  <img
+                    src="/gsap.jpg"
+                    data-i18n-attr="alt:portfolio.section1.lecture2Alt"
+                  />
+                </div>
+
+                <figcaption
+                  class="font-gang-bold"
+                  data-i18n="portfolio.section1.lecture2"
+                ></figcaption>
+              </a>
+            </figure>
+          </section>
+
+          <section>
+            <!-- 멀티캠퍼스 -->
+            <h2 class="highlight">
+              <a
+                href="https://m.multicampus.com/?gad_source=1&gad_campaignid=23276323600&gbraid=0AAAAA-SejQYQnSlCQUCHtT4fJ485JJTOI&gclid=CjwKCAiA1obMBhAbEiwAsUBbIvxFU-FELaTBjOQxYCAce67S6Wu_4JSTE5AKUe84oqcQjSgJ39Do9xoCDTIQAvD_BwE"
+                data-i18n="portfolio.section2.title"
+              >
+              </a>
+            </h2>
+            <figure>
+              <a
+                href="https://m.multicampus.com/course/crsDetail?corsCd=FA01IM"
+                target="_blank"
+              >
+                <div class="cover">
+                  <img
+                    src="/multi-figma.png"
+                    data-i18n-attr="alt:portfolio.section2.lecture1Alt"
+                  />
+                </div>
+                <figcaption
+                  class="font-gang-bold"
+                  data-i18n="portfolio.section2.lecture1"
+                ></figcaption>
+              </a>
+            </figure>
+            <figure>
+              <a
+                href="https://m.multicampus.com/course/crsDetail?corsCd=FA0164"
+                target="_blank"
+              >
+                <div class="cover">
+                  <img
+                    src="/multi-tailwind.png"
+                    data-i18n-attr="alt:portfolio.section2.lecture2Alt"
+                  />
+                </div>
+                <figcaption
+                  class="font-gang-bold"
+                  data-i18n="portfolio.section2.lecture2"
+                ></figcaption>
+              </a>
+            </figure>
+          </section>
+
+          <section>
+            <!-- 클래스유 -->
+            <h2 class="highlight">
+              <a
+                href="https://www.classu.co.kr/new"
+                data-i18n="portfolio.section3.title"
+              ></a>
+            </h2>
+            <figure>
+              <a href="https://www.naver.com" target="_blank">
+                <div class="cover">
+                  <img
+                    src="/multi-figma.png"
+                    data-i18n-attr="alt:portfolio.section3.lecture1Alt"
+                  />
+                </div>
+                <figcaption
+                  class="font-gang-bold"
+                  data-i18n="portfolio.section3.lecture1"
+                ></figcaption>
+              </a>
+            </figure>
+          </section>
+
+          <section>
+            <!-- 유튜브 -->
+            <h2 class="highlight">
+              <a
+                href="https://www.youtube.com/"
+                data-i18n="portfolio.section4.title"
+              ></a>
+            </h2>
+            <figure>
+              <a
+                href="https://www.youtube.com/@%EB%B2%94%EC%8C%A4-u1u"
+                target="_blank"
+              >
+                <div class="cover">
+                  <img
+                    src="/js.jpg"
+                    data-i18n-attr="alt:portfolio.section4.lecture1Alt"
+                  />
+                </div>
+                <figcaption
+                  class="font-gang-bold"
+                  data-i18n="portfolio.section4.lecture1"
+                ></figcaption>
+              </a>
+            </figure>
+            <figure>
+              <a href="https://www.youtube.com/@%EB%B2%94%EC%8C%A4-u1u">
+                <div class="cover">
+                  <img
+                    src="/js2.jpg"
+                    data-i18n-attr="alt:portfolio.section4.lecture2Alt"
+                  />
+                </div>
+                <figcaption
+                  class="font-gang-bold"
+                  data-i18n="portfolio.section4.lecture2"
+                ></figcaption>
+              </a>
+            </figure>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <div class="scroll"><img src="/scroll.png" alt="scroll down" /></div>
+  </body>
+</html>

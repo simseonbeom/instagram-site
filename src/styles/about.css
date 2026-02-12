@@ -1,0 +1,27 @@
+[data-barba-namespace="about"].container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  padding-top: 20vh;
+
+  h1 {
+    font-size: 30px;
+  }
+
+  a {
+    border-radius: 20px;
+    background-color: var(--primary);
+    padding: 8px 11px 8px 11px;
+    color: var(--fg);
+    display: flex;
+    gap: 0.2rem;
+    color: var(--fg);
+    align-items: center;
+
+    > div {
+      /* background-color: red; */
+      overflow: hidden;
+    }
+  }
+}

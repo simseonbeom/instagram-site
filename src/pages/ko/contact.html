@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>안녕하세요 범쌤입니다.</title>
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/home.js"></script>
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
+    <link rel="stylesheet" href="/styles/about.css" />
+    <link rel="stylesheet" href="/styles/portfolio.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
+  </head>
+
+  <body>
+    <svg
+      class="ham hamRotate ham7"
+      viewBox="0 0 100 100"
+      width="80"
+      aria-label="open menu"
+    >
+      <path
+        class="line top"
+        d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013"
+      />
+      <path class="line middle" d="m 70,50 h -40" />
+      <path
+        class="line bottom"
+        d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40"
+      />
+    </svg>
+
+    <nav id="global-navigation" class="nav-overlay" aria-hidden="true">
+      <ul class="nav-list">
+        <li class="active">
+          <a
+            href="/ko/index.html"
+            aria-current="page"
+            data-i18n="common.nav.home"
+          ></a>
+        </li>
+        <li><a href="/ko/about.html" data-i18n="common.nav.about"></a></li>
+        <li>
+          <a href="/ko/portfolio.html" data-i18n="common.nav.portfolio"></a>
+        </li>
+        <li><a href="/ko/contact.html" data-i18n="common.nav.contact"></a></li>
+      </ul>
+
+      <div
+        class="nav-tagline font-gang-bold"
+        data-i18n-html="common.contents.slogan"
+      ></div>
+
+      <footer class="nav-footer">
+        <div class="top">
+          <div class="lang-switch">
+            <button aria-current="true">KO</button>
+            <button>EN</button>
+          </div>
+
+          <ul class="social-links">
+            <li>
+              <a href="https://youtube.com" aria-label="YouTube"
+                ><img src="/icons/youtube.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://instagram.com" aria-label="Instagram"
+                ><img src="/icons/instagram.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://facebook.com" aria-label="Facebook"
+                ><img src="/icons/facebook.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <hr />
+        <ul class="bottom">
+          <li>
+            <span>WEBSITE BY</span>
+            <span>8B-Studio</span>
+          </li>
+          <li>© 2026 SeonBeomSim</li>
+        </ul>
+      </footer>
+    </nav>
+    <!-- Barba Wrapper -->
+    <div id="smooth-wrapper" data-barba="wrapper">
+      <div id="smooth-content">
+        <!-- Page Container -->
+        <main
+          class="container"
+          data-barba="container"
+          data-barba-namespace="contact"
+        >
+          <div class="top">
+            <img src="/visual-contact.jpg" alt="" data-speed="0.6" />
+          </div>
+          <div class="bottom">
+            <div class="inner">
+              <div class="bar"></div>
+              <h1 class="font-gang-bold">
+                어떤 문의를 <br />
+                하고 싶으신가요?
+              </h1>
+              <form action="">
+                <select name="category" id="">
+                  <option value="lecture">강의 문의</option>
+                  <option value="project">프로젝트 의뢰</option>
+                  <option value="cowork">협업 제안</option>
+                </select>
+                <div>
+                  <label for="nickName">성함 또는 회사명</label>
+                  <input type="text" id="nickName" required />
+                </div>
+                <div>
+                  <label for="email">이메일</label>
+                  <input type="email" id="email" required />
+                </div>
+                <div>
+                  <label for="textField">문의내용</label>
+                  <textarea
+                    name="textField"
+                    id="textField"
+                    draggable="false"
+                    required
+                  ></textarea>
+                </div>
+                <span
+                  >* 입력하신 정보는 문의 응답 목적 외에는 사용되지
+                  않습니다.</span
+                >
+                <button type="submit">문의하기</button>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
