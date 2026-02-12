@@ -24,11 +24,7 @@
       const lang =
         saved || (navigator.language?.startsWith("ko") ? "ko" : "en");
 
-      const map = {
-        ko: "./ko/",
-        en: "./en/",
-      };
-
+      const map = { ko: "ko/", en: "en/" }; // ✅ 절대경로 금지, ./도 없이 OK
       location.replace(map[lang] || map.en);
     </script>
   </head>
