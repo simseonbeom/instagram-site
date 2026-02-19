@@ -110,7 +110,11 @@
                 어떤 문의를 <br />
                 하고 싶으신가요?
               </h1>
-              <form action="">
+              <form
+                action="https://formsubmit.co/seonbeom2@gmail.com"
+                method="POST"
+                data-barba-prevent="self"
+              >
                 <select name="category" id="">
                   <option value="lecture">강의 문의</option>
                   <option value="project">프로젝트 의뢰</option>
@@ -118,16 +122,16 @@
                 </select>
                 <div>
                   <label for="nickName">성함 또는 회사명</label>
-                  <input type="text" id="nickName" required />
+                  <input type="text" name="name" id="nickName" required />
                 </div>
                 <div>
                   <label for="email">이메일</label>
-                  <input type="email" id="email" required />
+                  <input type="email" name="email" id="email" required />
                 </div>
                 <div>
                   <label for="textField">문의내용</label>
                   <textarea
-                    name="textField"
+                    name="message"
                     id="textField"
                     draggable="false"
                     required
