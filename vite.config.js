@@ -32,6 +32,7 @@ export default defineConfig({
         ko_about: resolve(__dirname, "src/pages/ko/about.html"),
         ko_contact: resolve(__dirname, "src/pages/ko/contact.html"),
         ko_portfolio: resolve(__dirname, "src/pages/ko/portfolio.html"),
+        ko_thanks: resolve(__dirname, "src/pages/ko/thanks.html"),
       },
     },
   },

@@ -1,11 +1,205 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>안녕하세요 범쌤입니다.</title>
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/home.js"></script>
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
+    <link rel="stylesheet" href="/styles/about.css" />
+    <link rel="stylesheet" href="/styles/portfolio.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
   </head>
+
   <body>
-    <h1>ㄱㅅㄱㅅ</h1>
+    <svg
+      class="ham hamRotate ham7"
+      viewBox="0 0 100 100"
+      width="80"
+      aria-label="open menu"
+    >
+      <path
+        class="line top"
+        d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013"
+      />
+      <path class="line middle" d="m 70,50 h -40" />
+      <path
+        class="line bottom"
+        d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40"
+      />
+    </svg>
+
+    <nav id="global-navigation" class="nav-overlay" aria-hidden="true">
+      <ul class="nav-list">
+        <li class="active">
+          <a
+            href="./index.html"
+            aria-current="page"
+            data-i18n="common.nav.home"
+            aria-disabled="true"
+            style="pointer-events: none"
+          ></a>
+        </li>
+        <li><a href="./about.html" data-i18n="common.nav.about"></a></li>
+        <li>
+          <a href="./portfolio.html" data-i18n="common.nav.portfolio"></a>
+        </li>
+        <li><a href="./contact.html" data-i18n="common.nav.contact"></a></li>
+      </ul>
+
+      <div
+        class="nav-tagline font-gang-bold"
+        data-i18n-html="common.contents.slogan"
+      ></div>
+
+      <footer class="nav-footer">
+        <div class="top">
+          <div class="lang-switch">
+            <button aria-current="true">KO</button>
+            <button>EN</button>
+          </div>
+
+          <ul class="social-links">
+            <li>
+              <a href="https://youtube.com" aria-label="YouTube"
+                ><img src="/icons/youtube.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://instagram.com" aria-label="Instagram"
+                ><img src="/icons/instagram.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://facebook.com" aria-label="Facebook"
+                ><img src="/icons/facebook.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <hr />
+        <ul class="bottom">
+          <li>
+            <span>WEBSITE BY</span>
+            <span>8B-Studio</span>
+          </li>
+          <li>© 2026 SeonBeomSim</li>
+        </ul>
+      </footer>
+    </nav>
+    <!-- Barba Wrapper -->
+    <div id="smooth-wrapper" data-barba="wrapper">
+      <div id="smooth-content">
+        <!-- Page Container -->
+        <main
+          class="container"
+          data-barba="container"
+          data-barba-namespace="thanks"
+        >
+          <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: "Inter", sans-serif;
+            }
+
+            body {
+              height: 100vh;
+              background: #111;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              overflow: hidden;
+            }
+
+            .wrapper {
+              text-align: center;
+              color: white;
+              animation: fadeUp 0.8s ease forwards;
+              opacity: 0;
+              transform: translateY(40px);
+            }
+
+            .icon {
+              width: 80px;
+              height: 80px;
+              border-radius: 50%;
+              background: #ff6c0c;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin: 0 auto 24px;
+              animation: pop 0.5s ease 0.3s forwards;
+              transform: scale(0);
+            }
+
+            .icon svg {
+              width: 36px;
+              fill: white;
+            }
+
+            h1 {
+              font-size: 42px;
+              font-weight: 700;
+              margin-bottom: 16px;
+            }
+
+            p {
+              color: #aaa;
+              font-size: 16px;
+              margin-bottom: 40px;
+            }
+
+            a {
+              display: inline-block;
+              padding: 14px 28px;
+              border-radius: 999px;
+              background: #ff6c0c;
+              color: white;
+              text-decoration: none;
+              font-weight: 600;
+              transition: 0.3s;
+            }
+
+            a:hover {
+              transform: translateY(-3px);
+              box-shadow: 0 10px 20px rgba(255, 108, 12, 0.4);
+            }
+
+            @keyframes fadeUp {
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+
+            @keyframes pop {
+              to {
+                transform: scale(1);
+              }
+            }
+          </style>
+          <div class="wrapper">
+            <div class="icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M9 16.2l-3.5-3.5-1.4 1.4L9 19 20.3 7.7l-1.4-1.4z" />
+              </svg>
+            </div>
+
+            <h1>문의가 접수되었습니다</h1>
+            <p>빠른 시일 내에 입력하신 이메일로 답변드리겠습니다.</p>
+
+            <a href="/instagram-site/">홈으로 돌아가기</a>
+          </div>
+        </main>
+      </div>
+    </div>
   </body>
 </html>
