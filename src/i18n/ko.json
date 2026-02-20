@@ -49,5 +49,20 @@
       "lecture2": "자바스크립트 속성 가이드",
       "lecture2Alt": "유튜브 자바스크립트 속성 가이드"
     }
+  },
+  "contact": {
+    "title": "어떤 문의를 <br /> 하고 싶으신가요?",
+    "category": {
+      "lecture": "강의 문의",
+      "project": "프로젝트 의뢰",
+      "cowork": "협업 제안"
+    },
+    "form": {
+      "nameLabel": "성함 또는 회사명",
+      "emailLabel": "이메일",
+      "messageLabel": "문의내용",
+      "notice": "* 입력하신 정보는 문의 응답 목적 외에는 사용되지 않습니다.",
+      "submit": "문의하기"
+    }
   }
 }

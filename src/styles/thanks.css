@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+} */
+
+[data-barba-namespace="thanks"].container {
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .wrapper {
+    text-align: center;
+    color: white;
+    animation: fadeUp 0.8s ease forwards;
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #ff6c0c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    animation: pop 0.5s ease 0.3s forwards;
+    transform: scale(0);
+  }
+
+  .icon svg {
+    width: 36px;
+    fill: white;
+  }
+
+  h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  p {
+    color: #aaa;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  a {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 999px;
+    background: #ff6c0c;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 108, 12, 0.4);
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pop {
+  to {
+    transform: scale(1);
+  }
+}
